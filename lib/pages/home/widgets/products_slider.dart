@@ -1,4 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
 import 'package:flutter/material.dart';
 
 class ProductsSlider extends StatefulWidget {
@@ -11,13 +11,14 @@ class ProductsSlider extends StatefulWidget {
 
 class _ProductsSliderState extends State<ProductsSlider> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final carousel_slider.CarouselController _controller =
+      carousel_slider.CarouselController();
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CarouselSlider(
+        carousel_slider.CarouselSlider(
           items: widget.items
               .map((e) => Image.asset(
                     e,
@@ -27,7 +28,7 @@ class _ProductsSliderState extends State<ProductsSlider> {
                   ))
               .toList(),
           carouselController: _controller,
-          options: CarouselOptions(
+          options: carousel_slider.CarouselOptions(
             height: 110,
             autoPlay: true,
             aspectRatio: 11 / 11,

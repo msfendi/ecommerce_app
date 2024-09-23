@@ -1,4 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
 import 'package:flutter/material.dart';
 
 class BannerSlider extends StatefulWidget {
@@ -11,13 +11,14 @@ class BannerSlider extends StatefulWidget {
 
 class _BannerSliderState extends State<BannerSlider> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final carousel_slider.CarouselController _controller =
+      carousel_slider.CarouselController();
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CarouselSlider(
+        carousel_slider.CarouselSlider(
           items: widget.items
               .map((e) => Image.asset(
                     e,
@@ -27,7 +28,7 @@ class _BannerSliderState extends State<BannerSlider> {
                   ))
               .toList(),
           carouselController: _controller,
-          options: CarouselOptions(
+          options: carousel_slider.CarouselOptions(
             autoPlay: true,
             aspectRatio: 315 / 152,
             viewportFraction: 1,
