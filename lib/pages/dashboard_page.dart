@@ -1,3 +1,7 @@
+import 'package:ecommerce/pages/home/checkout_page.dart';
+import 'package:ecommerce/pages/home/detail_order_page.dart';
+import 'package:ecommerce/pages/home/detail_page.dart';
+import 'package:ecommerce/pages/home/successed_order.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,19 +22,16 @@ class _DashboardPageState extends State<DashboardPage> {
     // const HomePage(),
     // const SearchPage(),
     const HomePage(),
-    const TablePage(),
+    const DetailPage(),
     // const Center(
     //   child: Text('This Page 2'),
     // ),
-    const Center(
-      child: Text('This Page 3'),
-    ),
-    const Center(
-      child: Text('This Page 4 '),
-    ),
-    const Center(
-      child: Text('This Page 5 '),
-    ),
+    // const Center(
+    //   child: Text('This Page 3'),
+    // ),
+    const CheckoutPage(),
+    const DetailOrderPage(),
+    const SuccessedOrder()
   ];
 
   void _onItemTapped(int index) {
