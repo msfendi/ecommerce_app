@@ -2,15 +2,8 @@
 
 A new Flutter project.
 
-## Getting Started
+Showcase Design :
+![image](https://github.com/user-attachments/assets/f912225f-5cf8-462e-98a8-84c3303a294d)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Figma Credits : https://www.figma.com/design/99jXThJdeAk94lyysYw4HV/E-Commerce---Mobile-App-Design-(Community)?node-id=0-1
